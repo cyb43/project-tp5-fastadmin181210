@@ -1,0 +1,566 @@
+---------------------------------------------------------------
+[ 2019-09-14T16:41:40+08:00 ] 127.0.0.1 GET project-tp5-fastadmin181210.test/admin/index/login
+[运行时间：0.105189s] [吞吐率：9.51req/s] [内存消耗：2,789.30kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000134s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004923s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005546s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000508s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-14T16:41:41+08:00 ] 127.0.0.1 GET project-tp5-fastadmin181210.test/captcha
+[运行时间：0.073534s] [吞吐率：13.60req/s] [内存消耗：1,729.59kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000153s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002320s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /Users/cenyebao/web/project-tp5-fastadmin181210/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-14T16:41:41+08:00 ] 127.0.0.1 GET project-tp5-fastadmin181210.test/admin/ajax/lang?callback=define&controllername=index&v=1568450500
+[运行时间：0.090007s] [吞吐率：11.11req/s] [内存消耗：2,793.84kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003034s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1568450500',
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.008922s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000509s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-14T16:41:53+08:00 ] 127.0.0.1 POST project-tp5-fastadmin181210.test/admin/index/login
+[运行时间：0.090792s] [吞吐率：11.01req/s] [内存消耗：3,655.34kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000125s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001577s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'content-length' => '86',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://project-tp5-fastadmin181210.test',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => '3ca39903edca731ca11a730d7b83e2f4',
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'nhwc',
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002459s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.007800s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000670s ] mysql:host=127.0.0.1;port=3306;dbname=p_tp5_fadmin181210;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.005621s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `logintime`=1568450513,`token`='24998412-f73d-453f-ad28-f9a226ca55f1',`updatetime`=1568450513  WHERE  `id` = 1 [ RunTime:0.001597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.006097s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"3ca39903edca731ca11a730d7b83e2f4\",\"username\":\"admin\",\"captcha\":\"nhwc\"}' , '/admin/index/login' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36' , '127.0.0.1' , 1568450513) [ RunTime:0.000757s ]
+---------------------------------------------------------------
+[ 2019-09-14T16:41:53+08:00 ] 127.0.0.1 GET project-tp5-fastadmin181210.test/admin/index/index
+[运行时间：0.235469s] [吞吐率：4.25req/s] [内存消耗：4,010.98kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001621s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002312s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/view/index/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000107s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000687s ] mysql:host=127.0.0.1;port=3306;dbname=p_tp5_fadmin181210;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.004856s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.005017s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001247s ]
+---------------------------------------------------------------
+[ 2019-09-14T16:41:53+08:00 ] 127.0.0.1 GET project-tp5-fastadmin181210.test/admin/dashboard?addtabs=1
+[运行时间：0.121801s] [吞吐率：8.21req/s] [内存消耗：3,755.02kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002764s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002600s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Dashboard.php ]
+[ info ] [ VIEW ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/view/dashboard/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000218s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000736s ] mysql:host=127.0.0.1;port=3306;dbname=p_tp5_fadmin181210;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.003633s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.002655s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001856s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.002665s ]
+---------------------------------------------------------------
+[ 2019-09-14T16:41:54+08:00 ] 127.0.0.1 GET project-tp5-fastadmin181210.test/admin/ajax/lang?callback=define&controllername=index&v=1568450513
+[运行时间：0.075921s] [吞吐率：13.17req/s] [内存消耗：2,794.96kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000216s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002307s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1568450513',
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003574s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000228s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-14T16:41:54+08:00 ] 127.0.0.1 GET project-tp5-fastadmin181210.test/admin/ajax/lang?callback=define&controllername=dashboard&v=1568450513
+[运行时间：0.074248s] [吞吐率：13.47req/s] [内存消耗：2,793.58kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000159s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002468s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1568450513',
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003767s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000224s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-14T16:41:54+08:00 ] 127.0.0.1 POST project-tp5-fastadmin181210.test/admin/index/news?callback=jQuery224024559967683034678_1568450513857
+[运行时间：0.132352s] [吞吐率：7.56req/s] [内存消耗：3,610.08kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001960s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'origin' => 'http://project-tp5-fastadmin181210.test',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery224024559967683034678_1568450513857',
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004377s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.007022s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001901s ] mysql:host=127.0.0.1;port=3306;dbname=p_tp5_fadmin181210;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.005862s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.003106s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.002426s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"callback\":\"jQuery224024559967683034678_1568450513857\"}' , '/admin/index/news?callback=jQuery224024559967683034678_1568450513857' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36' , '127.0.0.1' , 1568450514) [ RunTime:0.003418s ]
+---------------------------------------------------------------
+[ 2019-09-14T16:41:55+08:00 ] 127.0.0.1 GET project-tp5-fastadmin181210.test/admin/addon?addtabs=1
+[运行时间：0.127412s] [吞吐率：7.85req/s] [内存消耗：4,083.09kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001561s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'addon',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/addon?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002477s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/addon.php
+[ info ] [ RUN ] app\admin\controller\Addon->index[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Addon.php ]
+[ info ] [ VIEW ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/view/addon/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000198s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000671s ] mysql:host=127.0.0.1;port=3306;dbname=p_tp5_fadmin181210;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.002121s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.003794s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002552s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000751s ]
+---------------------------------------------------------------
+[ 2019-09-14T16:41:56+08:00 ] 127.0.0.1 GET project-tp5-fastadmin181210.test/admin/ajax/lang?callback=define&controllername=addon&v=1568450515
+[运行时间：0.095440s] [吞吐率：10.48req/s] [内存消耗：2,797.16kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000176s ]
+[ info ] [ CACHE ^2_3^ ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005779s ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'project-tp5-fastadmin181210.test',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://project-tp5-fastadmin181210.test/admin/addon?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=8fd7bacc2c3ec8682926605167ae371a',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'addon',
+  'v' => '1568450515',
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006806s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ^2_3^ ] /Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000355s ]
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,45 @@
+{
+    "newslist": [{
+        "id": "80",
+        "title": "FastAdmin二周年礼包活动正在进行中",
+        "url": "https:\/\/www.fastadmin.net\/act\/secondanniversary.html"
+    }, {
+        "id": "73",
+        "title": "FastAdmin全新问答社区已经上线，欢迎体验！",
+        "url": "https:\/\/ask.fastadmin.net\/"
+    }, {
+        "id": "72",
+        "title": "2019新年福袋活动正在进行中",
+        "url": "https:\/\/www.fastadmin.net\/act\/20190101\/springfestival.html"
+    }, {
+        "id": "71",
+        "title": "ThinkPHP5再次发布安全更新版本，请注意升级",
+        "url": "https:\/\/www.fastadmin.net\/news\/71.html"
+    }, {
+        "id": "70",
+        "title": "FastAdmin官网全新积分功能上线",
+        "url": "https:\/\/www.fastadmin.net\/news\/70.html"
+    }, {
+        "id": "69",
+        "title": "FastAdmin已取得计算机软件著作权登记证书",
+        "url": "https:\/\/www.fastadmin.net\/news\/69.html"
+    }, {
+        "id": "68",
+        "title": "ThinkPHP5发布安全更新，请务必关注你的FastAdmin版本。",
+        "url": "https:\/\/www.fastadmin.net\/news\/68.html"
+    }, {
+        "id": "15",
+        "title": "FastAdmin重磅推出强大的FormBuilder(表单生成器)功能",
+        "url": "https:\/\/forum.fastadmin.net\/thread\/5567"
+    }, {
+        "id": "14",
+        "title": "FastAdmin官方出品响应式博客(含小程序前后端)上架啦",
+        "url": "https:\/\/www.fastadmin.net\/store\/blog.html"
+    }, {
+        "id": "13",
+        "title": "FastAdmin官方出品CMS内容管理系统(含小程序前后端)上架啦",
+        "url": "https:\/\/www.fastadmin.net\/store\/cms.html"
+    }],
+    "new": 1,
+    "url": "https:\/\/www.fastadmin.net\/news.html?ref=news"
+}

@@ -1,0 +1,104 @@
+[PHP]_使用Cookie实现后台自动登录功能；
+--
+--
+/**
+ * 管理员登录
+ *
+ * @param   string $username 用户名；
+ * @param   string $password 密码；
+ * @param   int $keeptime 有效时长；
+ * @return  boolean
+ * @author ^2_3^
+ */
+public function login($username, $password, $keeptime = 0)
+{
+    $admin = Admin::get(['username' => $username]);
+    if (!$admin) {
+        $this->setError('Username is incorrect');
+        return false;
+    }
+
+    if ($admin['status'] == 'hidden') {
+        $this->setError('Admin is forbidden');
+        return false;
+    }
+
+    if (
+        Config::get('fastadmin.login_failure_retry')
+        && $admin->loginfailure >= 10
+        && time() - $admin->updatetime < 86400
+    ) {
+        $this->setError('Please try again after 1 day');
+        return false;
+    }
+
+    if ($admin->password != md5(md5($password) . $admin->salt)) {
+        //// 记录登录失败次数
+        $admin->loginfailure++;
+        $admin->save();
+        $this->setError('Password is incorrect');
+        return false;
+    }
+
+    //// 成功登录处理
+    $admin->loginfailure = 0;
+    $admin->logintime = time();
+    $admin->token = Random::uuid();
+    $admin->save();
+    Session::set("admin", $admin->toArray());
+    $this->keeplogin($keeptime);
+    return true;
+}
+--
+/**
+ * 刷新保持登录的Cookie
+ *
+ * @param   int $keeptime 保持登录时长；
+ * @return  boolean 是否成功；
+ * @author ^2_3^
+ */
+protected function keeplogin($keeptime = 0)
+{
+    if ($keeptime) {
+        $expiretime = time() + $keeptime;
+        $key = md5(md5($this->id) . md5($keeptime) . md5($expiretime) . $this->token);
+        $data = [$this->id, $keeptime, $expiretime, $key];
+        Cookie::set('keeplogin', implode('|', $data), 86400 * 30);
+        return true;
+    }
+    return false;
+}
+--
+/**
+ * 自动登录
+ * @return boolean
+ * @author ^2_3^王尔贝
+ */
+public function autologin()
+{
+    $keeplogin = Cookie::get('keeplogin');
+    if (!$keeplogin) {
+        return false;
+    }
+    
+    list($id, $keeptime, $expiretime, $key) = explode('|', $keeplogin);
+    if ($id && $keeptime && $expiretime && $key && $expiretime > time()) {
+        $admin = Admin::get($id);
+        if (!$admin || !$admin->token) {
+            return false;
+        }
+
+        //token有变更
+        if ($key != md5(md5($id) . md5($keeptime) . md5($expiretime) . $admin->token)) {
+            return false;
+        }
+
+        //// 登录状态检查通过，设置后台人员数据；
+        Session::set("admin", $admin->toArray());
+        //刷新自动登录的时效
+        $this->keeplogin($keeptime);
+        return true;
+    } else {
+        return false;
+    }
+}

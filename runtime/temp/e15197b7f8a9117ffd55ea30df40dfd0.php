@@ -1,0 +1,119 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:101:"/Users/cenyebao/web/project-tp5-fastadmin181210/public/../application/admin/view/auth/group/edit.html";i:1561830803;s:90:"/Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/view/layout/default.html";i:1544409142;s:87:"/Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/view/common/meta.html";i:1557217439;s:89:"/Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/view/common/script.html";i:1557217598;}*/ ?>
+<!DOCTYPE html>
+<html lang="<?php echo $config['language']; ?>">
+    <head>
+        <!-- ^2_3^ -->
+<meta charset="utf-8">
+<title><?php echo (isset($title) && ($title !== '')?$title:''); ?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+
+<link rel="shortcut icon" href="/assets/img/favicon.ico" />
+<!-- Loading Bootstrap -->
+<link href="/assets/css/backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    var require = {
+        config:  <?php echo json_encode($config); ?>
+    };
+</script>
+    </head>
+
+    <body class="inside-header inside-aside <?php echo defined('IS_DIALOG') && IS_DIALOG ? 'is-dialog' : ''; ?>">
+        <div id="main" role="main">
+            <div class="tab-content tab-addtabs">
+                <div id="content">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <section class="content-header hide">
+                                <h1>
+                                    <?php echo __('Dashboard'); ?>
+                                    <small><?php echo __('Control panel'); ?></small>
+                                </h1>
+                            </section>
+                            <?php if(!IS_DIALOG && !$config['fastadmin']['multiplenav']): ?>
+                            <!-- RIBBON -->
+                            <div id="ribbon">
+                                <ol class="breadcrumb pull-left">
+                                    <li><a href="dashboard" class="addtabsit"><i class="fa fa-dashboard"></i> <?php echo __('Dashboard'); ?></a></li>
+                                </ol>
+                                <ol class="breadcrumb pull-right">
+                                    <?php foreach($breadcrumb as $vo): ?>
+                                    <li><a href="javascript:;" data-url="<?php echo $vo['url']; ?>"><?php echo $vo['title']; ?></a></li>
+                                    <?php endforeach; ?>
+                                </ol>
+                            </div>
+                            <!-- END RIBBON -->
+                            <?php endif; ?>
+                            <div class="content">
+                                <!-- ^2_3^ -->
+<form id="edit-form" class="form-horizontal form-ajax" role="form" method="POST" action="">
+    <!-- 规则 隐藏域 -->
+    <input type="hidden" name="row[rules]" value="" />
+    <!-- 父级 下拉框 -->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Parent'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <?php echo build_select('row[pid]', $groupdata, $row['pid'],
+            ['class'=>'form-control selectpicker', 'data-rule'=>'required',
+            'data-id'=>$row['id'], 'data-pid'=>$row['pid']]); ?>
+        </div>
+    </div>
+    <!-- 名称 文本框 -->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Name'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="name" name="row[name]"
+                   value="<?php echo $row['name']; ?>" data-rule="required" />
+        </div>
+    </div>
+    <!-- 权限 节点数 -->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Permission'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <!-- 选中全部 -->
+            <span class="text-muted">
+                <input type="checkbox" name="" id="checkall" />
+                <label for="checkall"><small><?php echo __('Check all'); ?></small></label>
+            </span>
+            <!-- 展开全部 -->
+            <span class="text-muted">
+                <input type="checkbox" name="" id="expandall" />
+                <label for="expandall"><small><?php echo __('Expand all'); ?></small></label>
+            </span>
+            <!-- 节点树 -->
+            <div id="treeview"></div>
+        </div>
+    </div>
+    <!-- 状态 单选按钮组 -->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Status'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <?php echo build_radios('row[status]', ['normal'=>__('Normal'), 'hidden'=>__('Hidden')], $row['status']); ?>
+        </div>
+    </div>
+    <!-- 按钮组 -->
+    <div class="form-group hidden layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled"><?php echo __('OK'); ?></button>
+            <button type="reset" class="btn btn-default btn-embossed"><?php echo __('Reset'); ?></button>
+        </div>
+    </div>
+</form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ^2_3^ -->
+<script src="/assets/js/require<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js" data-main="/assets/js/require-backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js?v=<?php echo $site['version']; ?>"></script>
+    </body>
+</html>

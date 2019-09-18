@@ -1,0 +1,450 @@
+>platform_thinkphp5<
+^2_3^
+project-tp5-fastadmin181210
+>THINK_VERSION 5.0.23;
+>FastAdmin 1.0.0.20181210_beta;
+^2_3^
+--
+掌握系统
+(1)、权限模块(登录验证、访问验证);
+(2)、功能模块(列表功能)；
+--
+--
+开发环境：MacBookPro_MAMP/PhpStorm/MySQLWorkbench/SublimeText/Chrome；
+开发手册：(tp5.0) https://www.kancloud.cn/manual/thinkphp5/118003；
+开发手册：(fadmin) https://doc.fastadmin.net/docs/index.html；
+--
+本地主机：project-tp5-fastadmin181210.test；
+后台登录：http://project-tp5-fastadmin181210.test/admin/index/login；
+API接口：http://project-tp5-fastadmin181210.test/api/demo/test；(无需登录)
+API接口：http://project-tp5-fastadmin181210.test/api/demo/test2；(需要登录，无需鉴权)
+测试列表：http://project-tp5-fastadmin181210.test/admin/test?ref=addtabs；
+--
+Github: https://github.com/karsonzhang/fastadmin；
+Gitee(码云): https://gitee.com/karson/fastadmin；
+--
+Fastadmin开发文档：https://doc.fastadmin.net/ | https://doc.fastadmin.net/docs/index.html；
+Jquery：http://jquery.com；
+Bootstrap：http://getbootstrap.com | https://v3.bootcss.com/css/；
+Bootstrap-table：https://github.com/wenzhixin/bootstrap-table | http://bootstrap-table.wenzhixin.net.cn/zh-cn/；
+Layui：https://www.layui.com/doc/；
+Zui：http://zui.sexy/；
+Nice-validator：https://validator.niceue.com；
+SelectPage：https://github.com/TerryZ/SelectPage；
+jQuery-cxselect：https://www.npmjs.com/package/cxselect | https://github.com/karsonzhang/cxSelect；
+AdminLTE：https://adminlte.io；
+RequireJS：https://requirejs.org/；
+--
+--
+>>> | >>> | >>> | >>> | >>> | >>> | >>> | >>> | >>> | >>> | >>> | 
+--
+2workroom3工作室
+--
+>>> | >>> | >>> | >>> | >>> | >>> | >>> | >>> | >>> | >>> | >>> | 
+--
+--
+----|----|----|----|----|----|----|----|----|----
+--
+--
+零、常用命令
+///0/ 数据表 fa_test
+// 
+///1/ 参数
+-t, --table=TABLE                              表名，不带表前缀均可。
+-c, --controller[=CONTROLLER]                  生成的控制器名,可选,默认根据表名进行自动解析。
+-m, --model[=MODEL]                            生成的模型名,可选,默认根据表名进行自动解析。
+-i, --fields[=FIELDS]                          生成的数据列表中可见的字段，默认是全部。
+-f, --force[=FORCE]                            是否覆盖模式,如果目标位置已经有对应的控制器或模型会提示。
+-l, --local[=LOCAL]                            是否本地模型,默认1,置为0时,模型将生成在common模块下。
+-r, --relation[=RELATION]                      关联模型表名，带不带表前缀均可。
+-e, --relationmodel[=RELATIONMODEL]            生成的关联模型名,可选,默认根据表名进行自动解析。
+-k, --relationforeignkey[=RELATIONFOREIGNKEY]  表外键,可选,默认会识别为使用 模型_id 名称。
+-p, --relationprimarykey[=RELATIONPRIMARYKEY]  关联模型表主键,可选,默认会自动识别。
+-s, --relationfields[=RELATIONFIELDS]          关联模型表显示的字段，默认是全部。
+-o, --relationmode[=RELATIONMODE]              关联模型,hasone或belongsto [default: "belongsto"]。
+-d, --delete[=DELETE]                          删除模式,将删除之前使用CRUD命令生成的相关文件。
+-u, --menu[=MENU]                              菜单模式,生成CRUD后将继续一键生成菜单。
+--db[=key]                                     多数据库支持(参数为tp5中配置的数据库key 在application\config.php添加数据库配置信息)。
+--setcheckboxsuffix[=SETCHECKBOXSUFFIX]    自动生成复选框的字段后缀。
+--enumradiosuffix[=ENUMRADIOSUFFIX]        自动生成单选框的字段后缀。
+--imagefield[=IMAGEFIELD]                  自动生成图片上传组件的字段后缀。
+--filefield[=FILEFIELD]                    自动生成文件上传组件的字段后缀。
+--intdatesuffix[=INTDATESUFFIX]            自动生成日期组件的字段后缀。
+--switchsuffix[=SWITCHSUFFIX]              自动生成可选组件的字段后缀。
+--citysuffix[=CITYSUFFIX]                  自动生成城市选择组件的字段后缀。
+--selectpagesuffix[=SELECTPAGESUFFIX]      自动生成Selectpage组件的字段后缀。
+--ignorefields[=IGNOREFIELDS]              排除的字段。
+--editorclass[=EDITORCLASS]                自动生成富文本组件的字段后缀。
+--headingfilterfield[=HEADINGFILTERFIELD]  自动生成筛选过滤选项卡的字段，默认是status字段。
+--sortfield[=SORTFIELD]                    排序字段。
+// 
+///2/ 命令
+//
+/// 一键生成CRUD
+//
+//生成fa_test表的CRUD
+php think crud -t test
+//生成fa_test表的CRUD且一键生成菜单
+php think crud -t test -u 1
+//删除fa_test表生成的CRUD
+php think crud -t test -d 1
+//生成fa_test表的CRUD且控制器生成在二级目录下
+php think crud -t test -c mydir/test
+//生成fa_test_log表的CRUD且生成对应的控制器为testlog
+php think crud -t test_log -c testlog
+//生成fa_test表的CRUD且对应的模型名为testmodel
+php think crud -t test -m testmodel
+//生成fa_test表的CRUD且生成关联模型category，外链为category_id，关联表主键为id
+php think crud -t test -r category -k category_id -p id
+//生成fa_test表的CRUD且所有以list或data结尾的字段都生成复选框
+php think crud -t test --setcheckboxsuffix=list --setcheckboxsuffix=data
+//生成fa_test表的CRUD且所有以image和img结尾的字段都生成图片上传组件
+php think crud -t test --imagefield=image --imagefield=img
+//关联多个表,参数传递时请按顺序依次传递，支持以下几个参数relation/relationmodel/relationforeignkey/relationprimarykey/relationfields/relationmode
+php think crud -t test --relation=category --relation=admin --relationforeignkey=category_id --relationforeignkey=admin_id
+//生成v_phealth_db2数据库下的fa_test表的CRUD
+php think crud -t test --db=v_phealth_db2
+//
+/// 一键生成菜单
+//
+// 一键生成test控制器的权限菜单
+php think menu -c test
+// 一键生成mydir/test控制器的权限菜单
+php think menu -c mydir/test
+// 删除test控制器生成的菜单
+php think menu -c test -d 1
+// 一键全部重新所有控制器的权限菜单
+php think menu -c all-controller
+//
+/// 一键压缩打包
+//
+// 一键压缩打包前后台的JS和CSS
+php think min -m all -r all
+// 一键压缩打包后台的JS和CSS
+php think min -m backend -r all
+// 一键压缩打包前后台的JS
+php think min -m all -r js
+// 一键压缩打包后台的CSS
+php think min -m backend -r css
+--
+--
+--
+--
+--
+--
+三、前端功能组件
+1、基于AdminLTE二次开发；
+https://adminlte.io/
+2、基于Bootstrap开发，自适应手机、平板、PC；
+http://www.bootcss.com/
+http://getbootstrap.com
+3、基于RequireJS进行JS模块管理，按需加载；
+https://requirejs.org/
+4、基于Less进行样式开发；
+http://lesscss.cn/
+5、基于Bower进行前端组件包管理；
+https://bower.io/
+--
+--
+二、数据导入模块(tp5_fastamdin)
+/**
+ * 导入
+ * @author ^2_3^
+ */
+protected function import()
+{
+    // 导入文件
+    $file = $this->request->request('file');
+    if (!$file) {
+        $this->error(__('Parameter %s can not be empty', 'file'));
+    }
+
+    // 文件验证
+    $filePath = ROOT_PATH . DS . 'public' . DS . $file;
+    if (!is_file($filePath)) {
+        $this->error(__('No results were found'));
+    }
+
+    //// Excel2007文件读取
+    $PHPReader = new \PHPExcel_Reader_Excel2007();
+    if (!$PHPReader->canRead($filePath)) {
+        //// 切换Excel5
+        $PHPReader = new \PHPExcel_Reader_Excel5();
+        if (!$PHPReader->canRead($filePath)) {
+            /// 切换CSV
+            $PHPReader = new \PHPExcel_Reader_CSV();
+            if (!$PHPReader->canRead($filePath)) {
+                $this->error(__('Unknown data format'));
+            }
+        }
+    }
+
+    // 导入文件首行类型,默认是注释,如果需要使用字段名称请使用name
+    $importHeadType = isset($this->importHeadType) ? $this->importHeadType : 'comment';
+
+    // 表名名称
+    $table = $this->model->getQuery()->getTable();
+    // 数据库名称
+    $database = \think\Config::get('database.database');
+    $fieldArr = [];
+
+    //// 数据库表所有字段(字段名称、字段备注)
+    $list = db()->query("SELECT COLUMN_NAME,COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = ? AND TABLE_SCHEMA = ?", [$table, $database]);
+    foreach ($list as $k => $v) {
+        // 备注注释微首行
+        if ($importHeadType == 'comment') {
+            $fieldArr[$v['COLUMN_COMMENT']] = $v['COLUMN_NAME'];
+
+        } else {
+            // 字段名称首行
+            $fieldArr[$v['COLUMN_NAME']] = $v['COLUMN_NAME'];
+        }
+    }
+
+    //// 加载文件
+    $PHPExcel = $PHPReader->load($filePath); //加载文件；
+    $currentSheet = $PHPExcel->getSheet(0);  //读取文件中的第一个工作表；
+    // 列数
+    $allColumn = $currentSheet->getHighestDataColumn(); //取得最大的列号；
+    // 行数
+    $allRow = $currentSheet->getHighestRow(); //取得一共有多少行；
+    $maxColumnNumber = \PHPExcel_Cell::columnIndexFromString($allColumn);
+    for ($currentRow = 1; $currentRow <= 1; $currentRow++) {
+        for ($currentColumn = 0; $currentColumn < $maxColumnNumber; $currentColumn++) {
+            $val = $currentSheet->getCellByColumnAndRow($currentColumn, $currentRow)->getValue();
+            $fields[] = $val;
+        }
+    }
+
+    $insert = [];
+    for ($currentRow = 2; $currentRow <= $allRow; $currentRow++) {
+        //// 一行数据
+        $values = [];
+        for ($currentColumn = 0; $currentColumn < $maxColumnNumber; $currentColumn++) {
+            $val = $currentSheet->getCellByColumnAndRow($currentColumn, $currentRow)->getValue();
+            $values[] = is_null($val) ? '' : $val;
+        }
+
+        $row = [];
+        $temp = array_combine($fields, $values); //合并字段名称和字段数值成为新数组；
+        foreach ($temp as $k => $v) {
+            if (isset($fieldArr[$k]) && $k !== '') {
+                $row[$fieldArr[$k]] = $v;
+            }
+        }
+
+        if ($row) {
+            $insert[] = $row;
+        }
+    }
+
+    if (!$insert) {
+        $this->error(__('No rows were updated'));
+    }
+
+    //// 保存数据
+    try {
+        $this->model->saveAll($insert);
+
+    } catch (\think\exception\PDOException $exception) {
+        $this->error($exception->getMessage());
+
+    } catch (\Exception $e) {
+        $this->error($e->getMessage());
+    }
+
+    $this->success();
+}
+--
+--
+--
+一、登录模块(tp5_fastamdin)
+--
+1、登录操作
+/**
+ * 登录
+ *
+ * @param   string $username 用户名；
+ * @param   string $password 密码；
+ * @param   int $keeptime 有效时长；
+ * @return  boolean
+ * @author ^2_3^王尔贝
+ */
+public function login($username, $password, $keeptime = 0)
+{
+	// (模型方式)获取用户信息
+    $admin = Admin::get(['username' => $username]);
+
+    // 验证不通过
+    if (!$admin) {
+        $this->setError('Username is incorrect');
+        return false;
+    }
+    if ($admin['status'] == 'hidden') {
+        $this->setError('Admin is forbidden');
+        return false;
+    }
+
+    // 一日登录失败次数
+    if (Config::get('fastadmin.login_failure_retry') && $admin->loginfailure >= 10 && time() - $admin->updatetime < 86400) {
+        $this->setError('Please try again after 1 day');
+        return false;
+    }
+
+    // 密码验证
+    if ($admin->password != md5(md5($password) . $admin->salt)) {
+        //// 记录登录失败次数
+        $admin->loginfailure++;
+        $admin->save();
+
+        $this->setError('Password is incorrect');
+        return false;
+    }
+
+    //// 成功登录处理
+    $admin->loginfailure = 0; //归零登录；
+    $admin->logintime = time(); //登录时间；
+    $admin->token = Random::uuid(); //访问令牌；
+    $admin->save();
+    Session::set("admin", $admin->toArray()); //保存用户回话信息;
+    $this->keeplogin($keeptime); //保持登录Cookie刷新；
+    return true;
+}
+/**
+ * 保持登录Cookie刷新
+ *
+ * @param   int $keeptime 保持登录时长；
+ * @return  boolean 是否成功；
+ * @author ^2_3^王尔贝
+ */
+protected function keeplogin($keeptime = 0)
+{
+    if ($keeptime) {
+        $expiretime = time() + $keeptime;
+        $key = md5(md5($this->id) . md5($keeptime) . md5($expiretime) . $this->token);
+        $data = [$this->id, $keeptime, $expiretime, $key];
+        Cookie::set('keeplogin', implode('|', $data), 86400 * 30); //三十天存活期；
+        return true;
+    }
+    return false;
+}
+--
+2、退出操作
+/**
+ * 注销登录
+ * @author ^2_3^王尔贝
+ */
+public function logout()
+{
+	// (模式方式)获取用户信息
+    $admin = Admin::get(intval($this->id));
+    if (!$admin) {
+        return true;
+    }
+
+    // 恢复状态
+    $admin->token = ''; //空置令牌；
+    $admin->save();
+    Session::delete("admin"); //清除会话；
+    Cookie::delete("keeplogin"); //清除Cookie；
+    return true;
+}
+--
+3、自动登录
+/**
+ * 自动登录
+ * @return boolean
+ * @author ^2_3^王尔贝
+ */
+public function autologin()
+{
+	// 获取Cookie登录保持信息
+    $keeplogin = Cookie::get('keeplogin');
+    if (!$keeplogin) {
+        return false;
+    }
+
+    // 解析登录保持信息
+    list($id, $keeptime, $expiretime, $key) = explode('|', $keeplogin);
+    if ($id && $keeptime && $expiretime && $key && $expiretime > time()) {
+        $admin = Admin::get($id);
+        if (!$admin || !$admin->token) {
+            return false;
+        }
+
+        // token有变更(加密验证)
+        if ($key != md5(md5($id) . md5($keeptime) . md5($expiretime) . $admin->token)) {
+            return false;
+        }
+
+        //// 登录状态检查通过，设置后台人员数据；
+        Session::set("admin", $admin->toArray());
+        // 刷新自动登录的时效
+        $this->keeplogin($keeptime);
+
+        return true;
+
+    } else {
+        return false;
+    }
+}
+--
+4、检测是否登录
+/**
+ * 检测是否登录
+ *
+ * @return boolean
+ * @author ^2_3^
+ */
+public function isLogin()
+{
+	// 检验登录状态标识
+    if ($this->logined) {
+        return true;
+    }
+
+    // 检验会话数据
+    $admin = Session::get('admin');
+    if (!$admin) {
+        return false;
+    }
+
+    // 判断是否同一时间同一账号只能在一个地方登录
+    if (Config::get('fastadmin.login_unique')) {
+        $my = Admin::get($admin['id']);
+        if (!$my || $my['token'] != $admin['token']) {
+            return false;
+        }
+    }
+
+    // 登录标识
+    $this->logined = true;
+    return true;
+}
+--
+5、错误信息设置
+/**
+ * 设置错误信息
+ *
+ * @param string $error 错误信息
+ * @return Auth
+ * @author ^2_3^
+ */
+public function setError($error)
+{
+    $this->_error = $error;
+    return $this;
+}
+/**
+ * 获取错误信息
+ * @return string
+ * @author ^2_3^
+ */
+public function getError()
+{
+	// __()函数获取语言包信息
+    return $this->_error ? __($this->_error) : '';
+}
+--
+--
+--

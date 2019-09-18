@@ -1,0 +1,289 @@
+{
+    "total": 5,
+    "rows": [{
+        "id": "6",
+        "user_id": "1",
+        "category_id": "16",
+        "name": "summernote",
+        "title": "Summernote富文本编辑器",
+        "intro": "基于Bootstrap的极简富文本编辑器",
+        "description": "一个简单，灵活，所见即所得（WYSIWYG）的编辑器",
+        "tags": "summernote",
+        "banner": "https:\/\/cdn.fastadmin.net\/uploads\/banner\/6.jpg",
+        "image": "https:\/\/cdn.fastadmin.net\/uploads\/addons\/summernote.png",
+        "screenshots": "\/uploads\/20180505\/a90003020fc74a28f1b06635e6938bfc.png,\/uploads\/20180505\/981ea3315a85a1f41dfa30ce57fd4130.png",
+        "donateimage": "https:\/\/cdn.fastadmin.net\/uploads\/donate\/karson.png",
+        "bgtext": "Summer",
+        "bgcolor": "#70a1ff",
+        "author": "官方",
+        "url": "https:\/\/www.fastadmin.net\/store\/summernote.html",
+        "demourl": "",
+        "adminurl": "",
+        "wxappimage": "",
+        "qq": "171878601",
+        "score": "5.0",
+        "version": "1.0.4",
+        "price": "0.00",
+        "flag": ["recommend"],
+        "views": "0",
+        "likes": "81",
+        "sales": "0",
+        "downloads": "28352",
+        "comments": "0",
+        "require": ">= 1.0.0",
+        "weigh": "0",
+        "memo": "",
+        "template": "",
+        "iszone": "0",
+        "isnav": "0",
+        "createtime": "1500000000",
+        "updatetime": "1563899356",
+        "releasetime": "1563757860"
+    }, {
+        "id": "8",
+        "user_id": "1",
+        "category_id": "14",
+        "name": "example",
+        "title": "开发示例",
+        "intro": "FastAdmin后台开发示例",
+        "description": "包含Bootstrap-table示例、多表示例、多模型、模板示例、窗口切换、彩色角标等示例",
+        "tags": "开发示例",
+        "banner": "https:\/\/cdn.fastadmin.net\/uploads\/banner\/8.jpg",
+        "image": "https:\/\/cdn.fastadmin.net\/uploads\/addons\/example.png",
+        "screenshots": "\/uploads\/20180505\/5c5899428da2e747af77d5037bfa1514.png,\/uploads\/20180505\/490b5e0ed442c326340f715eac0417a6.png,\/uploads\/20180505\/41ebffaca42214ab86b4e73e2b7f5f8c.png,\/uploads\/20180505\/9f164168d020a1b295c16585c61de09d.png,\/uploads\/20180505\/50eac39277a895f54bb05a7823d692e8.png,\/uploads\/20180505\/252a94e615c4cba94dd76a3bcf80464d.png,\/uploads\/20180505\/0b2dade8a659e27afa7e83f5dc53f06e.png,\/uploads\/20180505\/d1d60a9392c1c8015bbee2e892d9a0e0.png",
+        "donateimage": "https:\/\/cdn.fastadmin.net\/uploads\/donate\/karson.png",
+        "bgtext": "example",
+        "bgcolor": "",
+        "author": "官方",
+        "url": "https:\/\/www.fastadmin.net\/store\/example.html",
+        "demourl": "https:\/\/demo.fastadmin.net\/example\/",
+        "adminurl": "https:\/\/demo.fastadmin.net\/admin\/example\/bootstraptable?ref=addtabs",
+        "wxappimage": "",
+        "qq": "171878601",
+        "score": "5.0",
+        "version": "1.0.8",
+        "price": "0.00",
+        "flag": ["recommend"],
+        "views": "0",
+        "likes": "419",
+        "sales": "0",
+        "downloads": "37261",
+        "comments": "0",
+        "require": ">= 1.0.0",
+        "weigh": "45",
+        "memo": "",
+        "template": "",
+        "iszone": "0",
+        "isnav": "0",
+        "createtime": "1500000000",
+        "updatetime": "1563899291",
+        "releasetime": "1561804052"
+    }, {
+        "id": "10",
+        "user_id": "1",
+        "category_id": "14",
+        "name": "database",
+        "title": "数据库管理",
+        "intro": "后台在线数据库管理",
+        "description": "后台可直接进行简单的数据库管理，如执行SQL、查看数据、修复数据表、优化数据表、查看表结构等",
+        "tags": "数据库管理",
+        "banner": "https:\/\/cdn.fastadmin.net\/uploads\/banner\/6.jpg",
+        "image": "https:\/\/cdn.fastadmin.net\/uploads\/addons\/database.png",
+        "screenshots": "\/uploads\/20180505\/b3cad7b4065b1cdc2fdbad739c5abff4.png,\/uploads\/20180505\/758ee58963e95b9ab33cceea50764c3b.png,\/uploads\/20180505\/6dd33ab67e500c3c14d6eec21c13f907.png",
+        "donateimage": "https:\/\/cdn.fastadmin.net\/uploads\/donate\/karson.png",
+        "bgtext": "database",
+        "bgcolor": "",
+        "author": "官方",
+        "url": "https:\/\/www.fastadmin.net\/store\/database.html",
+        "demourl": "",
+        "adminurl": "",
+        "wxappimage": "",
+        "qq": "171878601",
+        "score": "5.0",
+        "version": "1.0.5",
+        "price": "0.00",
+        "flag": ["recommend"],
+        "views": "0",
+        "likes": "52",
+        "sales": "0",
+        "downloads": "24311",
+        "comments": "0",
+        "require": ">= 1.0.0",
+        "weigh": "4",
+        "memo": "",
+        "template": "",
+        "iszone": "0",
+        "isnav": "0",
+        "createtime": "1500000000",
+        "updatetime": "1563898306",
+        "releasetime": "1559205638"
+    }, {
+        "id": "19",
+        "user_id": "1",
+        "category_id": "15",
+        "name": "wechat",
+        "title": "微信管理",
+        "intro": "微信菜单、自动回复管理等功能插件",
+        "description": "基于Easywechat开发的微信管理功能插件",
+        "tags": "微信管理,公众号管理",
+        "banner": "https:\/\/cdn.fastadmin.net\/uploads\/banner\/9.jpg",
+        "image": "https:\/\/cdn.fastadmin.net\/uploads\/addons\/wechat.png",
+        "screenshots": "\/uploads\/20180505\/83d44d3a7bf4235172eea86a2e4cb610.png,\/uploads\/20180505\/cf93ad2d8a89196d730cf3ec0f47ceb6.png,\/uploads\/20180505\/d1b325a1814847179ecc75969e2eb567.png,\/uploads\/20180505\/f9a54739fd4a6c3e0ab8740985bdefcb.png,\/uploads\/20180505\/8c2561df4f282babb4712dd7cf51e84d.png",
+        "donateimage": "https:\/\/cdn.fastadmin.net\/uploads\/donate\/karson.png",
+        "bgtext": "微信",
+        "bgcolor": "",
+        "author": "官方",
+        "url": "https:\/\/www.fastadmin.net\/store\/wechat.html",
+        "demourl": "https:\/\/cdn.fastadmin.net\/assets\/img\/wxpublic.png",
+        "adminurl": "",
+        "wxappimage": "",
+        "qq": "171878601",
+        "score": "5.0",
+        "version": "1.0.3",
+        "price": "0.00",
+        "flag": ["recommend"],
+        "views": "0",
+        "likes": "147",
+        "sales": "0",
+        "downloads": "20414",
+        "comments": "0",
+        "require": ">= 1.0.0",
+        "weigh": "21",
+        "memo": "",
+        "template": "",
+        "iszone": "0",
+        "isnav": "0",
+        "createtime": "1500000000",
+        "updatetime": "1563898305",
+        "releasetime": "1548397655"
+    }, {
+        "id": "55",
+        "user_id": "1",
+        "category_id": "14",
+        "name": "command",
+        "title": "在线命令",
+        "intro": "在线执行FastAdmin控制台命令",
+        "description": "在线执行FastAdmin中的一键生成CRUD、一键生成菜单、一键生成文档",
+        "tags": "在线命令,在线CRUD",
+        "banner": "https:\/\/cdn.fastadmin.net\/uploads\/banner\/7.jpg",
+        "image": "https:\/\/cdn.fastadmin.net\/uploads\/addons\/command.png",
+        "screenshots": "\/uploads\/20180505\/2f06461d35d29bdc9e43fe62075260df.png,\/uploads\/20180505\/fefe70b36cb26625bf31bcb2500e8c08.png,\/uploads\/20180505\/2a614841395ba31f6c82b548ac6bee86.png,\/uploads\/20180505\/2ac65dbeb9e8c584d3777f6b97b478df.png,\/uploads\/20180505\/3696b58c9c045a649da853beb268a532.png",
+        "donateimage": "https:\/\/cdn.fastadmin.net\/uploads\/donate\/karson.png",
+        "bgtext": "command",
+        "bgcolor": "",
+        "author": "官方",
+        "url": "https:\/\/www.fastadmin.net\/store\/command.html",
+        "demourl": "",
+        "adminurl": "",
+        "wxappimage": "",
+        "qq": "171878601",
+        "score": "5.0",
+        "version": "1.0.5",
+        "price": "0.00",
+        "flag": ["recommend"],
+        "views": "0",
+        "likes": "265",
+        "sales": "0",
+        "downloads": "44238",
+        "comments": "0",
+        "require": ">= 1.0.0.20180314_beta",
+        "weigh": "55",
+        "memo": "",
+        "template": "",
+        "iszone": "0",
+        "isnav": "0",
+        "createtime": "1521020510",
+        "updatetime": "1563899286",
+        "releasetime": "1536371570"
+    }],
+    "tpl": "
+        <style>
+            .addon-item {
+                position: relative;
+                z-index: 1;
+                padding: 2px;
+                margin-bottom: 30px;
+                border-radius: 4px;
+                background-clip: padding-box;
+                border: 1px solid #e4ecf3;
+            }
+
+            .addon-item .title {
+                margin: 10px 0 5px 0;
+            }
+
+            .addon-item .metas {
+                margin: 5px 0;
+            }
+        </style>
+
+        <div class="text-center pad" style="margin:0 10px;">
+            <div class="margin">
+                <img src="https://cdn.fastadmin.net/assets/img/logo.svg" alt="" width="80"/>
+            </div>
+            <p class="lead">感谢你的选择！</p>
+            <p class="lead">如果你在开发过程中遇到问题，请查阅<a href=\"https:\/\/doc.fastadmin.net\/\"
+                target=\"_blank\">开发文档<\/a>或<a href=\"https:\/\/forum.fastadmin.net\" target=\"_blank\">社区交流<\/a>
+            </p>
+            <p class="text-muted">FastAdmin是一款基于Apache2.0的开源产品，可免费商业使用。
+                如果有帮助到你，欢迎给我们捐赠。
+            </p>
+            <p class="lead">
+                <a class=\"btn btn-primary\" href=\"https:\/\/www.fastadmin.net\/donate.html\" target=\"_blank\"
+                    role=\"button\"><i class=\"fa fa-heart\"><\/i> 捐赠我们<\/a>
+                <a class=\"btn btn-success\" href=\"https:\/\/gitee.com\/karson\/fastadmin\" target=\"_blank\"
+                    rel=\"nofollow\" role=\"button\"><i class=\"fa fa-star\"><\/i> 给我们点赞<\/a>
+                <a href=\"https:\/\/jq.qq.com\/?_wv=1027&k=487PNBb\" class=\"btn btn-danger\" target=\"_blank\"
+                    rel=\"nofollow\"><i class=\"fa fa-qq\"><\/i> 交流群:636393962<\/a>
+            </p>
+            <hr>
+            <p class="lead" style="font-size:14px;">
+                建议你安装以下几款免费插件。稍后还可以在<mark>插件管理<\/mark>中安装其它的免费或付费插件
+            </p>
+            <div class="addon-list" style="height:180px;overflow:hidden;">
+                <div class="row">
+                    <%for(i=0;i< addonlist.length;i++){%>
+                    <%var item=addonlist[i]%>
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 grid-item" data-type="free">
+                        <div class="addon-item">
+                            <div class="addon-img">
+                                <a href="<%=item['url']%>" title="<%=item['title']%>">
+                                    <img src="<%=item['image']%>" alt="<%=item['title']%>" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="addon-info">
+                                <div class="title">
+                                    <a href="<%=item[url]%>" target="_blank" title="<%=item['title']%>">
+                                        <%=item['title']%>
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+                                    <input type="checkbox" name="addon" checked data-name="<%=item['name']%>"
+                                        data-title="<%=item['title']%>"/>
+                                    <span class="num"><i class="fa fa-user-o"></i>
+                                        <%=item['author']%>
+                                    </span>
+                                    <span class="comment">
+                                        <i class="fa fa-download"></i>
+                                        <span><%=item['downloads']%></span>
+                                    </span>
+                                    <span class="addon-price">
+                                        <span class="price">
+                                            <span class="text-success">免费</span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%}%>
+                </div>
+            </div>
+            <div class="margin">
+                <a href="javascript:;" class="btn btn-primary btn-install">一键安装</a>
+                <a href="javascript:;" class=\"btn btn-default btn-notnow">暂不安装</a>
+            </div>
+        </div>
+    "
+}

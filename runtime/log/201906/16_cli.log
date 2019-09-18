@@ -1,0 +1,4 @@
+[ 2019-06-16T04:44:13+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001632s ]
+[ info ] [ LOG ] INIT File
+[ 2019-06-16T04:44:13+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-06-16T04:44:13+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002058s ]

@@ -1,0 +1,29 @@
+[ 2019-05-17T14:51:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001332s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-17T14:51:37+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-17T14:51:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001209s ]
+[ 2019-05-17T14:51:37+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001775s ] mysql:host=127.0.0.1;port=3306;dbname=p_tp5_fadmin181210;charset=utf8
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'test' [ RunTime:0.000889s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_test' [ RunTime:0.002805s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'p_tp5_fadmin181210' AND table_name = 'fa_test' ORDER BY ORDINAL_POSITION [ RunTime:0.003255s ]
+[ 2019-05-17T14:51:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000158s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-17T14:51:37+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-17T14:51:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001923s ]
+[ 2019-05-17T14:51:37+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-17T14:51:37+08:00 ][ info ] [ LANG ] /Users/cenyebao/web/project-tp5-fastadmin181210/application/admin/lang/zh-cn.php
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001037s ] mysql:host=127.0.0.1;port=3306;dbname=p_tp5_fadmin181210;charset=utf8
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.002077s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'test' LIMIT 1 [ RunTime:0.000609s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'test' , '测试管理' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1558075897 , 1558075897) [ RunTime:0.001412s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'test/index' LIMIT 1 [ RunTime:0.000533s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'test/add' LIMIT 1 [ RunTime:0.000459s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'test/edit' LIMIT 1 [ RunTime:0.000473s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'test/del' LIMIT 1 [ RunTime:0.000487s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'test/multi' LIMIT 1 [ RunTime:0.000419s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 137 , 'test/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1558075897 , 1558075897) [ RunTime:0.000499s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 137 , 'test/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1558075897 , 1558075897) [ RunTime:0.000478s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 137 , 'test/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1558075897 , 1558075897) [ RunTime:0.000439s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 137 , 'test/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1558075897 , 1558075897) [ RunTime:0.000428s ]
+[ 2019-05-17T14:51:37+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 137 , 'test/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1558075897 , 1558075897) [ RunTime:0.000415s ]
